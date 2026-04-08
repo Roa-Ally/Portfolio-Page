@@ -88,3 +88,25 @@ nav a:hover {
 #projects h3 {
   margin-bottom: 0.5rem;
 }
+
+#skills {
+  margin: 2rem;
+}
+
+#skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (160pxm 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: #dcdcdc;
+  padding: 1rem;
+  border: 1px solid #bbb;
+  text-align: center;
+  font-weight: bold;
+}
