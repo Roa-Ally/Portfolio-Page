@@ -312,6 +312,24 @@ footer {
   margin-bottom: 1rem;
 }
 
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-box {
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 0.5rem;
@@ -403,6 +421,10 @@ footer {
   }
 
   .project-info {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
     grid-template-columns: 1fr;
   }
 }
