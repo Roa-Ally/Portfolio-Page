@@ -65,3 +65,26 @@ nav a:hover {
 #home button:hover {
   background-color: #bfbfbf;
 }
+#projects {
+  margin: 2rem;
+}
+
+#projects h2 {
+  margin-bottom: 1rem;
+}
+
+#projects div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250ox, 1ft));
+  gap: 1rem;
+}
+
+#projects article {
+  background-color: #dcdcdc;
+  padding: 1rem;
+  border: 1px solid #bbb;
+}
+
+#projects h3 {
+  margin-bottom: 0.5rem;
+}
