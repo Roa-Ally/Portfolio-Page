@@ -202,3 +202,32 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  header div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #home {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  #projects,
+  #skills,
+  #about,
+  #contact {
+    margin: 1rem;
+  }
+
+  .about-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
