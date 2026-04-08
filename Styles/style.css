@@ -246,11 +246,6 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
 
 @media (max-width: 768px) {
   .nav-container {
@@ -279,4 +274,62 @@ footer {
   .contact-layout {
     grid-template-columns: 1fr;
   }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .project-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-detail {
+  margin: 2rem;
+}
+
+.project-detail h2 {
+  margin-bottom: 1rem;
+}
+
+.project-hero {
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-overview,
+.project-tools,
+.project-process {
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.project-process {
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
