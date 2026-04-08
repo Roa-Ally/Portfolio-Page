@@ -110,3 +110,42 @@ nav a:hover {
   text-align: center;
   font-weight: bold;
 }
+
+#about {
+  margin: 2rem;
+}
+
+#about h2 {
+  margin-bottom: 1rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.about-headshot,
+.about-summary,
+.about-skills-box,
+.about-experience-box {
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  padding: 1rem;
+}
+
+.about-headshot {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-summary {
+  min-height: 220px;
+}
+
+.about-skills-box,
+.about-experience-box {
+  grid-column: span 1;
+}
