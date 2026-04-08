@@ -332,6 +332,21 @@ footer {
   height: 100%;
 }
 
+.project-thumbnail {
+  background-color: #ececec;
+  border: 1px solid #bbb;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.project-thumbnail p {
+  font-weight: bold;
+}
+
 /* =====================
    RESPONSIVE
 ===================== */
