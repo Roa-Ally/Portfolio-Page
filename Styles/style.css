@@ -75,7 +75,7 @@ nav a:hover {
 
 #projects div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250ox, 1ft));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
