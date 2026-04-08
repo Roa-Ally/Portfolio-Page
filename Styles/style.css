@@ -149,3 +149,40 @@ nav a:hover {
 .about-experience-box {
   grid-column: span 1;
 }
+
+#contact {
+  margin: 2rem;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-intro,
+.contact-links {
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  padding: 1rem;
+}
+
+.contact-intro button {
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #aaa;
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+.contact-intro button:hover {
+  background-color: #bfbfbf;
+}
+
+.contact-links p {
+  margin-bottom: 0.5rem;
+}
