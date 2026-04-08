@@ -43,3 +43,25 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+#home h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#home p {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+#home button {
+  padding: 0.7rem 1.2rem;
+  margin-right: 1rem;
+  border: 1px solid #aaa;
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+#home button:hover {
+  background-color: #bfbfbf;
+}
