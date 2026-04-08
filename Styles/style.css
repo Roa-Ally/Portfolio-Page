@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -15,6 +19,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #f5f5f5;
+}
+h2 {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -48,6 +55,17 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+button {
+  font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
 }
 
 #home h2 {
@@ -89,10 +107,30 @@ nav a:hover {
   background-color: #dcdcdc;
   padding: 1rem;
   border: 1px solid #bbb;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+#projects article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #projects h3 {
   margin-bottom: 0.5rem;
+}
+
+article,
+.skill-card,
+.about-headshot,
+.about-summary,
+.about-skills-box,
+.about-experience-box,
+.contact-intro,
+.contact-links {
+  border-radius: 6px;
 }
 
 #skills {
@@ -128,7 +166,7 @@ nav a:hover {
 .about-layout {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .about-headshot,
