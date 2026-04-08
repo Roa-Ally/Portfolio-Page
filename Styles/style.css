@@ -186,3 +186,19 @@ nav a:hover {
 .contact-links p {
   margin-bottom: 0.5rem;
 }
+
+footer {
+  background-color: #d9d9d9;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
