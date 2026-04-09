@@ -27,52 +27,146 @@
       <main>
         <section class="project-detail">
           <h2>Commander Coco's Stellar Domination</h2>
-
           <div class="project-hero">
-            <!-- REPLACE -->
-            <p>Project Screenshot</p>
+            <button
+              class="media-trigger"
+              type="button"
+              data-type="image"
+              data-src="../images/projects/comander-coco/commander-coco-project-image.png"
+              data-alt="Commander Coco main screenshot"
+            >
+              <img
+                src="../images/projects/comander-coco/commander-coco-project-image.png"
+                alt="Commander Coco main screenshot"
+              />
+            </button>
           </div>
 
           <div class="project-info">
             <div class="project-overview">
               <h3>Overview</h3>
               <p>
-                <!-- REPLACE -->
-                Brief overview of the project goes here. This will describe what
-                the project is and its purpose.
+                Commander Coco’s Stellar Domination is a 2D endless arcade
+                shooter where players take control of Commander Coco, a
+                seemingly cute but secretly ruthless bunny thrown into a chaotic
+                battle for survival in space. The game combines fast paced
+                shooting mechanics with a playful yet dark narrative twist, as
+                Coco fights against increasingly difficult waves of enemies,
+                including his evolutionary rival, the kitsune.
+              </p>
+              <br />
+              <p>
+                Players use simple controls for movement and shooting, making
+                the game easy to pick up while still offering a challenging
+                experience as difficulty ramps up over time. The endless
+                gameplay loop encourages players to survive as long as possible,
+                improving their reflexes and strategy with each run.
+              </p>
+              <br />
+              <p>
+                With its vibrant visuals, quirky concept, and engaging action,
+                the game blends humor and intensity to create a unique arcade
+                experience. It was developed during ShellHacks 2024 in just 36
+                hours, where it went on to win Best First-Time Hacker,
+                highlighting both its creativity and execution under pressure.
               </p>
             </div>
 
             <div class="project-tools">
               <h3>Tools</h3>
-              <!-- REPLACE -->
-              <p>List of tools used</p>
+              <p>Unity 2D</p>
+              <p>Aseprite</p>
             </div>
           </div>
 
           <div class="project-process">
             <h3>Process</h3>
             <p>
-              <!-- REPLACE -->
-              Description of the process, development approach, and any
-              important decisions made during the project.
+              Built within a tight 36 hour hackathon timeframe, development was
+              highly fast paced and focused on rapid prototyping. The team
+              prioritized getting a playable core loop running as quickly as
+              possible, starting with basic movement and shooting. Once that
+              foundation was in place, enemies and wave mechanics were added to
+              introduce challenge and progression.
+            </p>
+            <br />
+            <p>
+              Due to the time constraint, decisions were made quickly, with a
+              focus on functionality over perfection. Features were implemented
+              in parallel, with team members working simultaneously on gameplay,
+              visuals, and design. Continuous quick testing helped catch issues
+              early and keep everything working together.
+            </p>
+            <br />
+            <p>
+              The final result reflects a high energy, collaborative development
+              sprint, where creativity, adaptability, and teamwork were key to
+              delivering a complete and award winning game in a short amount of
+              time.
             </p>
           </div>
 
           <div class="project-gallery">
             <div class="gallery-box">
-              <!-- REPLACE -->
-              <img
-                src="../images/place-holder-images.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/comander-coco/commander-coco-gallery-image-1.png"
+                data-alt="Commander Coco screenshot 1"
+              >
+                <img
+                  src="../images/projects/comander-coco/commander-coco-gallery-image-1.png"
+                  alt="Commander Coco screenshot 1"
+                />
+              </button>
             </div>
+
             <div class="gallery-box">
-              <!-- REPLACE -->
-              <img
-                src="../images/place-holder-images.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/comander-coco/commander-coco-gallery-image-2.png"
+                data-alt="Commander Coco screenshot 2"
+              >
+                <img
+                  src="../images/projects/comander-coco/commander-coco-gallery-image-2.png"
+                  alt="Commander Coco screenshot 2"
+                />
+              </button>
+            </div>
+
+            <div class="gallery-box">
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/comander-coco/commander-coco-gallary-image-3.gif"
+                data-alt="Gameplay animation"
+              >
+                <img
+                  src="../images/projects/comander-coco/commander-coco-gallary-image-3.gif"
+                  alt="Gameplay animation"
+                />
+              </button>
+            </div>
+
+            <div class="gallery-box">
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="video"
+                data-src="../media/projects/commander-coco/commander-coco-video.mp4"
+                data-poster="../images/projects/comander-coco/commander-coco-gallery-image-2.png"
+                data-alt="Commander Coco Stellar Domination gameplay demo preview"
+              >
+                <img
+                  src="../images/projects/comander-coco/commander-coco-gallery-image-2.png"
+                  alt="Commander Coco Stellar Domination gameplay demo preview"
+                />
+                <span class="video-badge">▶</span>
+              </button>
             </div>
           </div>
 
@@ -104,5 +198,35 @@
         </div>
       </footer>
     </div>
+    <div class="image-modal" id="imageModal">
+      <button class="image-modal-arrow left-arrow" id="prevImage" type="button">
+        &#10094;
+      </button>
+
+      <div class="image-modal-panel">
+        <button class="image-modal-close" id="closeModal" type="button">
+          &times;
+        </button>
+
+        <img class="image-modal-content" id="modalImage" alt="Expanded media" />
+
+        <video
+          class="image-modal-video"
+          id="modalVideo"
+          controls
+          playsinline
+        ></video>
+      </div>
+
+      <button
+        class="image-modal-arrow right-arrow"
+        id="nextImage"
+        type="button"
+      >
+        &#10095;
+      </button>
+    </div>
+
+    <script src="../scripts/image-modal.js"></script>
   </body>
 </html>
