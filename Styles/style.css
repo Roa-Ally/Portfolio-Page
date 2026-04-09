@@ -169,6 +169,33 @@ article,
 }
 
 /* =====================
+   HERO BUTTONS
+===================== */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #aaa;
+  background-color: #cfcfcf;
+  font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #bfbfbf;
+  transform: translateY(-1px);
+}
+
+/* =====================
    ABOUT SECTION
 ===================== */
 
