@@ -291,6 +291,22 @@ article,
   margin-bottom: 0.5rem;
 }
 
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.contact-item span {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-item a {
+  font-size: 0.95rem;
+}
+
 footer {
   background-color: #d9d9d9;
   padding: 1rem 2rem;
