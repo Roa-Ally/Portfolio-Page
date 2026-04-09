@@ -42,6 +42,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
 header {
   background-color: #d9d9d9;
   padding: 1rem 2rem;
@@ -102,6 +103,7 @@ button:hover {
 #home button:hover {
   background-color: #bfbfbf;
 }
+
 #projects {
   margin: 2rem;
 }
@@ -166,6 +168,33 @@ article,
   border: 1px solid #bbb;
   text-align: center;
   font-weight: bold;
+}
+
+/* =====================
+   HERO BUTTONS
+===================== */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid #aaa;
+  background-color: #cfcfcf;
+  font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #bfbfbf;
+  transform: translateY(-1px);
 }
 
 /* =====================
@@ -248,8 +277,34 @@ article,
   background-color: #bfbfbf;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-links a {
+  display: inline-block;
+}
+
 .contact-links p {
   margin-bottom: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.contact-item span {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-item a {
+  font-size: 0.95rem;
 }
 
 footer {
@@ -306,6 +361,12 @@ footer {
   border: 1px solid #bbb;
   padding: 1rem;
   border-radius: 6px;
+}
+
+.project-tools p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .project-process {
@@ -406,6 +467,72 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
+}
+
+.project-thumbnail,
+.project-hero,
+.gallery-box {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* =====================
+   IMAGE MODAL
+===================== */
+
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.image-modal-content {
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.image-modal-arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.75rem 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.image-modal-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.left-arrow {
+  left: 2rem;
+}
+
+.right-arrow {
+  right: 2rem;
 }
 
 /* =====================
@@ -448,7 +575,36 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .project-thumbnail {
+    height: 140px;
+  }
+
+  .project-hero {
+    height: 220px;
+  }
+
+  .gallery-box {
+    height: 160px;
+  }
+
   .project-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .image-modal-content {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+  .image-modal-arrow {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .left-arrow {
+    left: 1rem;
+  }
+
+  .right-arrow {
+    right: 1rem;
   }
 }
