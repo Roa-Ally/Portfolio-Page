@@ -26,52 +26,74 @@
 
       <main>
         <section class="project-detail">
-          <!-- REPLACE -->
           <h2>Prismatic Peril</h2>
 
           <div class="project-hero">
-            <!-- REPLACE -->
-            <p>Project Screenshot</p>
+            <img
+              src="../images/projects/prismatic-peril/prismatic-peril-project-image.png"
+              alt="Prismatic Peril screenshot"
+            />
           </div>
 
           <div class="project-info">
             <div class="project-overview">
               <h3>Overview</h3>
-              <!-- REPLACE -->
+
               <p>
-                Brief overview of the project goes here. This will describe what
-                the project is and its purpose.
+                Prismatic Peril is a top down action defense game where players
+                protect magical crystals from waves of corrupted enemies and
+                restore light to a darkened world. As the last Prism Guardian,
+                players use movement, combat, and abilities like teleportation
+                to defend multiple objectives and purify the environment.
               </p>
             </div>
 
             <div class="project-tools">
               <h3>Tools</h3>
-              <!-- REPLACE -->
-              <p>List of tools used</p>
+
+              <p>Unity 2D</p>
+              <p>Aseprite</p>
             </div>
           </div>
 
           <div class="project-process">
             <h3>Process</h3>
-            <!-- REPLACE -->
+
             <p>
-              Description of the process, development approach, and any
-              important decisions made during the project.
+              The game was developed through an iterative process, starting with
+              core mechanics like player movement, combat, and crystal defense.
+              From there, systems such as enemy spawning, abilities, and
+              interactions were added and refined through playtesting. Visual
+              assets and animations were created alongside development in
+              Aseprite and integrated into Unity to enhance feedback and game
+              feel. The team continuously tested and adjusted gameplay balance,
+              difficulty, and pacing to create a more engaging and polished
+              experience.
             </p>
           </div>
 
           <div class="project-gallery">
             <div class="gallery-box">
-              <!-- REPLACE -->
               <img
-                src="../images/place-holder-images.png"
+                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-1.png"
                 alt="Additional project view"
               />
             </div>
             <div class="gallery-box">
-              <!-- REPLACE -->
               <img
-                src="../images/place-holder-images.png"
+                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-2.png"
+                alt="Additional project view"
+              />
+            </div>
+            <div class="gallery-box">
+              <img
+                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-3.png"
+                alt="Additional project view"
+              />
+            </div>
+            <div class="gallery-box">
+              <img
+                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-4.png"
                 alt="Additional project view"
               />
             </div>
@@ -105,5 +127,20 @@
         </div>
       </footer>
     </div>
+    <div class="image-modal" id="imageModal">
+      <button class="image-modal-arrow left-arrow" id="prevImage">
+        &#10094;
+      </button>
+      <img
+        class="image-modal-content"
+        id="modalImage"
+        alt="Expanded project image"
+      />
+      <button class="image-modal-arrow right-arrow" id="nextImage">
+        &#10095;
+      </button>
+      <span class="image-modal-close" id="closeModal">&times;</span>
+    </div>
+    <script src="../scripts/image-modal.js"></script>
   </body>
 </html>
