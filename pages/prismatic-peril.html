@@ -27,12 +27,19 @@
       <main>
         <section class="project-detail">
           <h2>Prismatic Peril</h2>
-
           <div class="project-hero">
-            <img
-              src="../images/projects/prismatic-peril/prismatic-peril-project-image.png"
-              alt="Prismatic Peril screenshot"
-            />
+            <button
+              class="media-trigger"
+              type="button"
+              data-type="image"
+              data-src="../images/projects/prismatic-peril/prismatic-peril-project-image.png"
+              data-alt="Prismatic Peril main screenshot"
+            >
+              <img
+                src="../images/projects/prismatic-peril/prismatic-peril-project-image.png"
+                alt="Prismatic Peril main screenshot"
+              />
+            </button>
           </div>
 
           <div class="project-info">
@@ -41,16 +48,26 @@
 
               <p>
                 Prismatic Peril is a top down action defense game where players
-                protect magical crystals from waves of corrupted enemies and
-                restore light to a darkened world. As the last Prism Guardian,
-                players use movement, combat, and abilities like teleportation
-                to defend multiple objectives and purify the environment.
+                take on the role of the last Prism Guardian, tasked with
+                protecting powerful crystals from waves of corrupted enemies.
+                Set in a vibrant yet threatened world, the goal is to defend
+                multiple crystal points, eliminate enemies, and restore light to
+                areas consumed by darkness.
+              </p>
+              <br />
+              <p>
+                The gameplay combines movement, combat, and strategic
+                positioning, with abilities like teleportation and special
+                attacks adding depth to encounters. As enemies spawn around the
+                map, players must balance offense and defense while managing
+                multiple objectives at once. Through fast paced action and
+                escalating difficulty, the game challenges players to survive,
+                purify all crystals, and bring balance back to the world.
               </p>
             </div>
 
             <div class="project-tools">
               <h3>Tools</h3>
-
               <p>Unity 2D</p>
               <p>Aseprite</p>
             </div>
@@ -74,28 +91,61 @@
 
           <div class="project-gallery">
             <div class="gallery-box">
-              <img
-                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-1.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-1.png"
+                data-alt="Prismatic Peril screenshot 1"
+              >
+                <img
+                  src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-1.png"
+                  alt="Prismatic Peril screenshot 1"
+                />
+              </button>
+            </div>
+
+            <div class="gallery-box">
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-2.png"
+                data-alt="Prismatic Peril screenshot 2"
+              >
+                <img
+                  src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-2.png"
+                  alt="Prismatic Peril screenshot 2"
+                />
+              </button>
             </div>
             <div class="gallery-box">
-              <img
-                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-2.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-3.png"
+                data-alt="Prismatic Peril screenshot 3"
+              >
+                <img
+                  src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-3.png"
+                  alt="Prismatic Peril screenshot 3"
+                />
+              </button>
             </div>
             <div class="gallery-box">
-              <img
-                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-3.png"
-                alt="Additional project view"
-              />
-            </div>
-            <div class="gallery-box">
-              <img
-                src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-4.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-4.png"
+                data-alt="Prismatic Peril screenshot 4"
+              >
+                <img
+                  src="../images/projects/prismatic-peril/prismatic-peril-gallery-image-4.png"
+                  alt="Prismatic Peril screenshot 4"
+                />
+              </button>
             </div>
           </div>
 
@@ -128,19 +178,34 @@
       </footer>
     </div>
     <div class="image-modal" id="imageModal">
-      <button class="image-modal-arrow left-arrow" id="prevImage">
+      <button class="image-modal-arrow left-arrow" id="prevImage" type="button">
         &#10094;
       </button>
-      <img
-        class="image-modal-content"
-        id="modalImage"
-        alt="Expanded project image"
-      />
-      <button class="image-modal-arrow right-arrow" id="nextImage">
+
+      <div class="image-modal-panel">
+        <button class="image-modal-close" id="closeModal" type="button">
+          &times;
+        </button>
+
+        <img class="image-modal-content" id="modalImage" alt="Expanded media" />
+
+        <video
+          class="image-modal-video"
+          id="modalVideo"
+          controls
+          playsinline
+        ></video>
+      </div>
+
+      <button
+        class="image-modal-arrow right-arrow"
+        id="nextImage"
+        type="button"
+      >
         &#10095;
       </button>
-      <span class="image-modal-close" id="closeModal">&times;</span>
     </div>
+
     <script src="../scripts/image-modal.js"></script>
   </body>
 </html>

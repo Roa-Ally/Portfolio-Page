@@ -455,6 +455,12 @@ footer {
   overflow: hidden;
 }
 
+.project-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .gallery-box {
   height: 220px;
   overflow: hidden;
@@ -491,20 +497,41 @@ footer {
   z-index: 9999;
 }
 
-.image-modal-content {
-  max-width: 75vw;
-  max-height: 75vh;
+.image-modal-panel {
+  position: relative;
+  width: min(78vw, 1000px);
+  height: min(78vh, 700px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal-content,
+.image-modal-video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
   border-radius: 6px;
+  display: none;
 }
 
 .image-modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 2.5rem;
+  top: -5rem;
+  right: 0;
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
   color: white;
+  font-size: 2.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-modal-arrow {
@@ -523,7 +550,8 @@ footer {
   border-radius: 6px;
 }
 
-.image-modal-arrow:hover {
+.image-modal-arrow:hover,
+.image-modal-close:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -533,6 +561,53 @@ footer {
 
 .right-arrow {
   right: 2rem;
+}
+
+.image-modal-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  display: none;
+}
+
+/* =====================
+   MEDIA TRIGGER
+===================== */
+
+.media-trigger {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.media-trigger img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.video-badge {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  pointer-events: none;
 }
 
 /* =====================
@@ -591,6 +666,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .image-modal-panel {
+    width: min(90vw, 700px);
+    height: min(70vh, 500px);
+  }
+
   .image-modal-content {
     max-width: 90vw;
     max-height: 70vh;
@@ -606,5 +686,12 @@ footer {
 
   .right-arrow {
     right: 1rem;
+  }
+
+  .image-modal-close {
+    top: -2.5rem;
+    width: 46px;
+    height: 46px;
+    font-size: 2rem;
   }
 }
