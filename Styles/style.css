@@ -42,6 +42,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
 header {
   background-color: #d9d9d9;
   padding: 1rem 2rem;
@@ -102,6 +103,7 @@ button:hover {
 #home button:hover {
   background-color: #bfbfbf;
 }
+
 #projects {
   margin: 2rem;
 }
