@@ -1,0 +1,380 @@
+/* =====================
+   HOME
+===================== */
+
+#home h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+#home p {
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+/* =====================
+   PROJECTS PAGE
+===================== */
+
+.projects-hero {
+  background-color: #e3e3e3;
+  padding: 3rem 2rem;
+  margin: 2rem;
+}
+
+.projects-hero h2 {
+  margin-bottom: 0.5rem;
+}
+
+.projects-hero p {
+  max-width: 700px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#projects article {
+  background-color: #dcdcdc;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+#projects article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h3,
+.project-detail h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* =====================
+   SKILLS
+===================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+/* =====================
+   ABOUT
+===================== */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skills-box,
+.about-experience-box {
+  padding: 2rem;
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.about-skills-box h2,
+.about-experience-box h2 {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.about-skills-box li,
+.experience li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.about-skills-box h4,
+.about-experience-box h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+.about-skills-box h3,
+.experience h2,
+.experience h4 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-skills-box ul,
+.about-experience-box ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.about-skills-box li,
+.about-experience-box li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.about-summary {
+  min-height: 220px;
+}
+
+.about-experience-box {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  background-color: #dcdcdc;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.about-headshot {
+  align-self: flex-start;
+}
+
+.about-headshot img {
+  width: 325px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.experience h4 {
+  margin-top: 20px;
+}
+
+.experience ul {
+  margin-bottom: 20px;
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-intro button {
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-links p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.contact-item span {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.contact-item a {
+  font-size: 0.95rem;
+}
+
+/* =====================
+   PROJECT DETAIL
+===================== */
+
+.project-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-tools p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.project-process {
+  margin-bottom: 1rem;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-thumbnail {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+/* =====================
+   RESUME
+===================== */
+
+.resume-section {
+  padding: 40px;
+}
+
+.resume-section h2,
+.resume-section p {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-intro {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.resume-frame {
+  width: 100%;
+  height: 750px;
+  border: none;
+  display: block;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+  .nav-container,
+  header div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #home,
+  #projects,
+  #skills,
+  #about,
+  #contact,
+  #projects-page,
+  .project-detail,
+  .projects-hero,
+  .resume-section {
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-layout,
+  .contact-layout,
+  .project-info,
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .project-thumbnail {
+    height: 140px;
+  }
+
+  .project-hero {
+    height: 220px;
+  }
+
+  .gallery-box {
+    height: 160px;
+  }
+
+  .resume-frame {
+    height: 500px;
+  }
+
+  .image-modal-panel {
+    width: min(90vw, 700px);
+    height: min(70vh, 500px);
+  }
+
+  .image-modal-content {
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+
+  .image-modal-arrow {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .left-arrow {
+    left: 1rem;
+  }
+
+  .right-arrow {
+    right: 1rem;
+  }
+
+  .image-modal-close {
+    top: -2.5rem;
+    width: 46px;
+    height: 46px;
+    font-size: 2rem;
+  }
+}
