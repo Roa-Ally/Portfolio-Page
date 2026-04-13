@@ -5,59 +5,80 @@
 .page-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
+  padding: 2rem;
   width: 100%;
 }
 
-header {
-  background-color: #d9d9d9;
-  padding: 1rem 2rem;
+.site-header,
+.site-footer {
+  width: 100%;
+  background-color: #3e3237;
 }
 
-header div,
-.nav-container {
+.header-inner,
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-nav {
-  display: flex;
+  justify-content: space-between;
   gap: 1.5rem;
 }
 
-nav a {
-  font-size: 0.95rem;
+.header-title {
+  color: var(--white);
+  margin: 0;
 }
 
-nav a:hover,
-.footer-links a:hover,
-.back-link:hover {
-  text-decoration: underline;
-}
-
-footer {
-  background-color: #d9d9d9;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-}
-
-.footer-links {
+.header-nav,
+.footer-inner {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-/* =====================
-   COMMON SECTION SPACING
-===================== */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.header-nav a,
+.site-footer a {
+  color: var(--white);
+}
+
+.header-nav a:hover,
+.site-footer a:hover,
+.back-link:hover {
+  color: var(--pink-primary);
+}
 
 #projects,
 #skills,
 #about,
 #contact,
 #projects-page,
-.project-detail {
-  margin: 2rem;
+.project-detail,
+.resume-section {
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-content {
+    padding: 1rem;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+  }
 }

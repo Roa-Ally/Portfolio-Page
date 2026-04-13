@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../Styles/layout.css" />
     <link rel="stylesheet" href="../Styles/components.css" />
     <link rel="stylesheet" href="../Styles/pages.css" />
+    <link rel="stylesheet" href="../Styles/colors.css" />
   </head>
 
   <body>
@@ -31,8 +32,18 @@
           <h2>Portfolio Project</h2>
 
           <div class="project-hero">
-            <!-- REPLACE -->
-            <p>Project Screenshot</p>
+            <button
+              class="media-trigger"
+              type="button"
+              data-type="image"
+              data-src="../images/projects/portfolio-project/portfolio-project-image.png"
+              data-alt="Portfolio screenshot thumbnail"
+            >
+              <img
+                src="../images/projects/portfolio-project/portfolio-project-image.png"
+                alt="Portfolio screenshot thumbnail"
+              />
+            </button>
           </div>
 
           <div class="project-info">
@@ -66,13 +77,15 @@
             </div>
 
             <div class="project-tools">
-              <h3>Tools</h3>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>Flexbox</p>
-              <p>CSS Grid</p>
-              <p>Responsive Design</p>
-              <p>Git & GitHub</p>
+              <h3 class="section-title">Tools</h3>
+              <ul class="tools-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Flexbox</li>
+                <li>CSS Grid</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+              </ul>
               <div class="tool-images">
                 <img
                   src="../images/icons/HTML5_logo_and_wordmark.svg.png"
@@ -125,18 +138,32 @@
 
           <div class="project-gallery">
             <div class="gallery-box">
-              <!-- REPLACE -->
-              <img
-                src="../images/place-holder-images.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/portfolio-project/portfolio-project-image-gallery-1.png"
+                data-alt="Portfolio screenshot 1"
+              >
+                <img
+                  src="../images/projects/portfolio-project/portfolio-project-image-gallery-1.png"
+                  alt="Portfolio screenshot 1"
+                />
+              </button>
             </div>
             <div class="gallery-box">
-              <!-- REPLACE -->
-              <img
-                src="../images/place-holder-images.png"
-                alt="Additional project view"
-              />
+              <button
+                class="media-trigger"
+                type="button"
+                data-type="image"
+                data-src="../images/projects/portfolio-project/portfolio-project-image-gallery-2.png"
+                data-alt="Portfolio screenshot 2"
+              >
+                <img
+                  src="../images/projects/portfolio-project/portfolio-project-image-gallery-2.png"
+                  alt="Portfolio screenshot 2"
+                />
+              </button>
             </div>
           </div>
 
@@ -172,6 +199,13 @@
           controls
           playsinline
         ></video>
+
+        <iframe
+          class="image-modal-iframe"
+          id="modalIframe"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+        ></iframe>
       </div>
 
       <button
@@ -183,6 +217,6 @@
       </button>
     </div>
 
-    <script src="../scripts/image-modal.js"></script>
+    <script src="../Scripts/image-modal.js"></script>
   </body>
 </html>
