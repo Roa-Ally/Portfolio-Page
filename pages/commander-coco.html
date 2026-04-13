@@ -11,20 +11,20 @@
   </head>
 
   <body>
-    <div class="page-container">
-      <header>
-        <div class="nav-container">
-          <h1>Ally | Portfolio</h1>
-          <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../contact.html">Contact</a>
-            <a href="../resume.html">Resume</a>
-          </nav>
-        </div>
-      </header>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="header-title">Ally | Portfolio</h1>
 
+        <nav class="header-nav">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
       <main>
         <section class="project-detail">
           <h2>Commander Coco's Stellar Domination</h2>
@@ -76,7 +76,24 @@
             <div class="project-tools">
               <h3>Tools</h3>
               <p>Unity 2D</p>
+              <p>Git & GitHub</p>
               <p>Aseprite</p>
+              <div class="tool-images">
+                <img
+                  src="../images/icons/unity-game-engine-logo-icon.png"
+                  alt="Unity"
+                />
+                <img src="../images/Icons/Git-Icon-Black.png" alt="Git" />
+                <img
+                  src="../images/Icons/github-icon-1-logo-black-and-white.png"
+                  alt="GitHub"
+                />
+
+                <img
+                  src="../images/icons/aseprite_logo_icon.png"
+                  alt="Asprite"
+                />
+              </div>
             </div>
           </div>
 
@@ -174,31 +191,17 @@
           <a class="back-link" href="../projects.html">Back to Projects</a>
         </section>
       </main>
-
-      <footer>
-        <div class="footer-links">
-          <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello">Email Me</a>
-          <a
-            href="https://www.linkedin.com/in/ayleen-roa"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/roa-ally"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          <a
-            href="https://roa-ally.itch.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Itch.io</a
-          >
-        </div>
-      </footer>
     </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a href="mailto:Roa.Ayleen07@gmail.com">Email Me</a>
+        <a href="https://www.linkedin.com/in/ayleen-roa" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/roa-ally" target="_blank">GitHub</a>
+        <a href="https://roa-ally.itch.io/" target="_blank">Itch.io</a>
+      </div>
+    </footer>
     <div class="image-modal" id="imageModal">
       <button class="image-modal-arrow left-arrow" id="prevImage" type="button">
         &#10094;
