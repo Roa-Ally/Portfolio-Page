@@ -11,20 +11,21 @@
   </head>
 
   <body>
-    <div class="page-container">
-      <header>
-        <div class="nav-container">
-          <h1>Ally | Portfolio</h1>
-          <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../contact.html">Contact</a>
-            <a href="../resume.html">Resume</a>
-          </nav>
-        </div>
-      </header>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="header-title">Ally | Portfolio</h1>
 
+        <nav class="header-nav">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-content">
       <main>
         <section class="project-detail">
           <h2>Portfolio Project</h2>
@@ -37,26 +38,88 @@
           <div class="project-info">
             <div class="project-overview">
               <h3>Overview</h3>
-              <!-- REPLACE -->
+
               <p>
-                Brief overview of the project goes here. This will describe what
-                the project is and its purpose.
+                This portfolio website was designed to showcase my projects,
+                skills, and experience in a way that feels clean, organized, and
+                easy to navigate. The goal was to create a space where someone
+                can quickly understand what I’ve built, how I approach
+                development, and the type of work I enjoy doing.
+              </p>
+              <br />
+              <p>
+                Rather than just listing projects, I wanted each one to have its
+                own dedicated page that gives more context into the design
+                decisions, tools used, and development process behind it. This
+                makes the site feel more like a collection of real work instead
+                of just a gallery.
+              </p>
+              <br />
+              <p>
+                A big focus of this project was creating a layout that stays
+                consistent across different screen sizes while still feeling
+                visually balanced. I paid attention to spacing, alignment, and
+                structure so everything feels intentional and easy to follow.
+                Overall, the site reflects both my technical skills and the way
+                I approach designing user friendly experiences.
               </p>
             </div>
 
             <div class="project-tools">
               <h3>Tools</h3>
-              <!-- REPLACE -->
-              <p>List of tools used</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Flexbox</p>
+              <p>CSS Grid</p>
+              <p>Responsive Design</p>
+              <p>Git & GitHub</p>
+              <div class="tool-images">
+                <img
+                  src="../images/icons/HTML5_logo_and_wordmark.svg.png"
+                  alt="HTML"
+                />
+                <img
+                  src="../images/Icons/CSS3_logo_and_wordmark.svg.png"
+                  alt="CSS"
+                />
+                <img src="../images/icons/Git-Icon-Black.png" alt="Asprite" />
+                <img
+                  src="../images/Icons/github-icon-1-logo-black-and-white.png"
+                  alt="GitHub"
+                />
+              </div>
             </div>
           </div>
 
           <div class="project-process">
             <h3>Process</h3>
-            <!-- REPLACE -->
             <p>
-              Description of the process, development approach, and any
-              important decisions made during the project.
+              This project started with planning out the structure of the site,
+              deciding what pages were needed and how users would move between
+              them. I wanted the layout to feel simple and consistent, with
+              sections like Home, Projects, and Contact clearly defined so
+              navigation feels natural.
+            </p>
+            <br />
+            <p>
+              From there, I built the site page by page, starting with the main
+              layout and then adding individual components like project cards,
+              detail pages, and the contact section. A big part of the process
+              was testing spacing, alignment, and layout choices to make sure
+              the design looked clean and held up across different screen sizes.
+            </p>
+            <br />
+            <p>
+              As the site came together, I kept refining smaller details like
+              button styles, section spacing, image placement, and overall
+              consistency. I also organized the styling into separate CSS files
+              so the project would stay easier to manage as it grew.
+            </p>
+            <br />
+            <p>
+              Overall, this project was both a design and development exercise.
+              I focused not just on making the site functional, but on making it
+              feel polished, intentional, and easy for someone to explore.
             </p>
           </div>
 
@@ -80,31 +143,17 @@
           <a class="back-link" href="../projects.html">Back to Projects</a>
         </section>
       </main>
-
-      <footer>
-        <div class="footer-links">
-          <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello">Email Me</a>
-          <a
-            href="https://www.linkedin.com/in/ayleen-roa"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/roa-ally"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          <a
-            href="https://roa-ally.itch.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Itch.io</a
-          >
-        </div>
-      </footer>
     </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a href="mailto:Roa.Ayleen07@gmail.com">Email Me</a>
+        <a href="https://www.linkedin.com/in/ayleen-roa" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/roa-ally" target="_blank">GitHub</a>
+        <a href="https://roa-ally.itch.io/" target="_blank">Itch.io</a>
+      </div>
+    </footer>
     <div class="image-modal" id="imageModal">
       <button class="image-modal-arrow left-arrow" id="prevImage" type="button">
         &#10094;

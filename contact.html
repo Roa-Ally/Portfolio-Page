@@ -10,98 +10,133 @@
     <link rel="stylesheet" href="Styles/pages.css" />
   </head>
   <body>
-    <div class="page-container">
-      <header>
-        <div>
-          <h1>Ally | Portfolio</h1>
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="resume.html">Resume</a>
-          </nav>
-        </div>
-      </header>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="header-title">Ally | Portfolio</h1>
 
+        <nav class="header-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
       <main>
         <section id="contact">
           <h2>Contact</h2>
 
           <div class="contact-layout">
             <div class="contact-intro">
-              <button>Contact Me</button>
-              <p>Generic contact text goes here.</p>
+              <h3>Let’s connect!</h3>
+
+              <p>
+                Thank you for taking the time to check out my work. If you're
+                interested in collaborating or just want to reach out, feel free
+                to send me a message!
+              </p>
+
+              <form
+                id="contact-form"
+                action="mailto:Roa.Ayleen07@gmail.com"
+                method="POST"
+                enctype="text/plain"
+              >
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required />
+                <small class="form-hint hidden"
+                  >Name must have at least 2 letters.</small
+                >
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="Email" required />
+                <small class="form-hint hidden">
+                  Email must start with a letter, include an @, and end in .com.
+                </small>
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="Message"
+                  rows="4"
+                  required
+                ></textarea>
+                <small class="form-hint hidden">
+                  Message must be at least 6 words.
+                </small>
+
+                <button type="submit" class="send-button">Send Message</button>
+
+                <p id="form-message" class="form-message"></p>
+              </form>
             </div>
 
             <div class="contact-links">
-              <div class="contact-item">
-                <span>Email Me</span>
-                <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello">
-                  Roa.ayleen07@gmail.com
-                </a>
-              </div>
+              <h3 class="contact-title">Contact Me</h3>
 
-              <div class="contact-item">
-                <span>LinkedIn</span>
-                <a
-                  href="https://www.linkedin.com/in/ayleen-roa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  www.linkedin.com/in/ayleen-roa
-                </a>
-              </div>
+              <table class="contact-table">
+                <tr>
+                  <th>Email</th>
+                  <td>
+                    <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello">
+                      Roa.ayleen07@gmail.com
+                    </a>
+                  </td>
+                </tr>
 
-              <div class="contact-item">
-                <span>GitHub</span>
-                <a
-                  href="https://github.com/roa-ally"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/roa-ally
-                </a>
-              </div>
+                <tr>
+                  <th>LinkedIn</th>
+                  <td>
+                    <a
+                      href="https://www.linkedin.com/in/ayleen-roa"
+                      target="_blank"
+                    >
+                      linkedin.com/in/ayleen-roa
+                    </a>
+                  </td>
+                </tr>
 
-              <div class="contact-item">
-                <span>Itch.io</span>
-                <a
-                  href="https://roa-ally.itch.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  roa-ally.itch.io
-                </a>
-              </div>
+                <tr>
+                  <th>GitHub</th>
+                  <td>
+                    <a href="https://github.com/roa-ally" target="_blank">
+                      github.com/roa-ally
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Itch.io</th>
+                  <td>
+                    <a href="https://roa-ally.itch.io/" target="_blank">
+                      roa-ally.itch.io
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <img
+                src="images/coding-typing.gif"
+                alt="Typing gif"
+                class="contact-image"
+              />
             </div>
           </div>
         </section>
       </main>
-
-      <footer>
-        <div class="footer-links">
-          <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello">Email Me</a>
-          <a
-            href="https://www.linkedin.com/in/ayleen-roa"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/roa-ally"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          <a
-            href="https://roa-ally.itch.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Itch.io</a
-          >
-        </div>
-      </footer>
     </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a href="mailto:Roa.Ayleen07@gmail.com">Email Me</a>
+        <a href="https://www.linkedin.com/in/ayleen-roa" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/roa-ally" target="_blank">GitHub</a>
+        <a href="https://roa-ally.itch.io/" target="_blank">Itch.io</a>
+      </div>
+    </footer>
+    <script src="scripts/contact.js"></script>
   </body>
 </html>
