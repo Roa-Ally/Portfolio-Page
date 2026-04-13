@@ -8,16 +8,21 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #222;
   line-height: 1.6;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.2s ease;
 }
 
 img {
@@ -26,9 +31,23 @@ img {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-soft);
 }
 
 h2 {
   margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--text-main);
 }
