@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/base.css" />
+    <link rel="stylesheet" href="Styles/layout.css" />
+    <link rel="stylesheet" href="Styles/components.css" />
+    <link rel="stylesheet" href="Styles/pages.css" />
   </head>
   <body>
     <div class="page-container">
@@ -14,10 +17,10 @@
           <h1>Ally | Portfolio</h1>
           <nav>
             <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
+            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
-            <a href="index.html#contact">Contact</a>
-            <a href="documents/ayleen-roa-resume.pdf" target="_blank">Resume</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
           </nav>
         </div>
       </header>
@@ -27,39 +30,95 @@
           <!-- REPLACE -->
           <h2>Hello, I'm Ally</h2>
           <p>
-            This is a short intro about who I am and what I do. Will replace
-            this later with something more personal.
+            I’m Ayleen but i go by Ally, a computer science student at FIU who’s
+            been building things for a while now. I actually started programming
+            before stepping into leadership, creating a few projects on my own
+            and figuring things out through a lot of trial and error. Later on,
+            I became Technical Projects Chair for SWE, where I led workshops and
+            helped others build their own projects, which pushed me to grow both
+            technically and as a leader.
+          </p>
+          <br />
+          <p>
+            Since then, I’ve worked across game development, front end, and
+            interactive experiences, including time at Universal Creative on
+            both the VACE and IXP teams where I built simulations and tools
+            alongside the team. I’m strongest in Unity and C#, but I also work
+            with React and web development, so I can move between building full
+            experiences and designing clean, usable interfaces.
+          </p>
+          <br />
+          <p>
+            I like creating things people can actually use and enjoy. Whether
+            it’s a game, a tool, or a website, I care about how it feels, not
+            just how it works.
           </p>
           <div class="hero-actions">
             <a class="hero-button" href="projects.html">View Projects</a>
-            <a class="hero-button" href="#contact">Contact Me</a>
-            <a
-              class="hero-button"
-              href="documents/ayleen-roa-resume.pdf"
-              target="_blank"
-              >Resume</a
-            >
+            <a class="hero-button" href="contact.html">Contact Me</a>
+            <a class="hero-button" href="resume.html" target="_blank">Resume</a>
           </div>
         </section>
         <section id="projects">
           <h2>Featured Projects</h2>
 
           <div class="projects-grid">
-            <!-- REPLACE -->
-            <article>
-              <h3>Project One</h3>
-              <p>Short description of the project.</p>
-            </article>
+            <a href="pages/portfolio-site.html" class="project-card-link">
+              <article>
+                <div class="project-thumbnail">
+                  <img
+                    src="images/projects/portfolio-project/portfolio-project-image.png"
+                    alt="Portfolio Project"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Portfolio Project</h3>
+                  <p>
+                    Built a multi page portfolio website to showcase projects
+                    and skills, focusing on responsive design, clean UI, and
+                    scalable structure.
+                  </p>
+                </div>
+              </article>
+            </a>
 
-            <article>
-              <h3>Project Two</h3>
-              <p>Short description of the project.</p>
-            </article>
+            <a href="pages/language-quest.html" class="project-card-link">
+              <article>
+                <div class="project-thumbnail">
+                  <img
+                    src="images/projects/language-quest/language-quest-project-image.png"
+                    alt="Language Quest"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Language Quest</h3>
+                  <p>
+                    An interactive 2D narrative game that teaches Spanish
+                    through storytelling, puzzles, and exploration by connecting
+                    language to culture and meaningful experiences.
+                  </p>
+                </div>
+              </article>
+            </a>
 
-            <article>
-              <h3>Project Three</h3>
-              <p>Short description of the project.</p>
-            </article>
+            <a href="pages/commander-coco.html" class="project-card-link">
+              <article>
+                <div class="project-thumbnail">
+                  <img
+                    src="images/projects/comander-coco/commander-coco-project-image.png"
+                    alt="Commander Coco"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Commander Coco's Stellar Domination</h3>
+                  <p>
+                    A 2D endless arcade shooter where players control a
+                    seemingly cute but ruthless bunny battling enemies in a fast
+                    paced space setting.
+                  </p>
+                </div>
+              </article>
+            </a>
           </div>
         </section>
         <section id="skills">
@@ -71,82 +130,6 @@
             <div class="skill-card">UI/UX Design</div>
             <div class="skill-card">Game Development</div>
             <div class="skill-card">React</div>
-          </div>
-        </section>
-        <section id="about">
-          <h2>About</h2>
-          <!-- REPLACE -->
-          <div class="about-layout">
-            <div class="about-headshot">
-              <p>Headshot</p>
-            </div>
-            <!-- REPLACE -->
-            <div class="about-summary">
-              <p>
-                Generic about text goes here. This section will later introduce
-                My background, interests, and the kind of work I enjoy creating.
-              </p>
-            </div>
-            <!-- REPLACE -->
-            <div class="about-skills-box">
-              <h3>Technical Skills</h3>
-              <p>Programming, design, and development highlights go here.</p>
-            </div>
-            <!-- REPLACE -->
-            <div class="about-experience-box">
-              <h3>Experience</h3>
-              <p>Short experience summary goes here.</p>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <h2>Contact</h2>
-
-          <div class="contact-layout">
-            <div class="contact-intro">
-              <button>Contact Me</button>
-              <!-- REPLACE -->
-              <p>Generic contact text goes here.</p>
-            </div>
-
-            <div class="contact-links">
-              <div class="contact-item">
-                <span>Email Me</span>
-                <a href="mailto:Roa.Ayleen07@gmail.com?subject=Hello"
-                  >Roa.ayleen07@gmail.com</a
-                >
-              </div>
-
-              <div class="contact-item">
-                <span>LinkedIn</span>
-                <a
-                  href="https://www.linkedin.com/in/ayleen-roa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >www.linkedin.com/in/ayleen-roa</a
-                >
-              </div>
-
-              <div class="contact-item">
-                <span>GitHub</span>
-                <a
-                  href="https://github.com/roa-ally"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >github.com/roa-ally</a
-                >
-              </div>
-
-              <div class="contact-item">
-                <span>Itch.io</span>
-                <a
-                  href="https://roa-ally.itch.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >roa-ally.itch.io</a
-                >
-              </div>
-            </div>
           </div>
         </section>
       </main>
