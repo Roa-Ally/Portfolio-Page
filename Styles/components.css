@@ -120,6 +120,9 @@
 .gallery-box {
   overflow: hidden;
   border-radius: 10px 10px 10px 10px;
+  height: 600px;
+  outline: auto;
+  outline-color: var(--border-soft);
 }
 
 .gallery-box {
@@ -162,9 +165,15 @@
 }
 
 .skill-card {
+  flex: 1 1 140px;
+  max-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 700;
   padding: 1rem;
+  white-space: nowrap;
 }
 
 .skill-card:hover {
@@ -201,6 +210,16 @@
   object-fit: contain;
   border-radius: 6px;
   display: none;
+}
+
+.image-modal-content {
+  cursor: zoom-in;
+  transition: transform 0.1s ease;
+  user-select: none;
+}
+
+.image-modal-panel {
+  overflow: hidden;
 }
 
 .image-modal-iframe {

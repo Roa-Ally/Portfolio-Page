@@ -36,9 +36,10 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* =====================
@@ -221,6 +222,15 @@
   object-fit: contain;
 }
 
+.project-overview a {
+  color: var(--pink-primary);
+  text-decoration: underline;
+}
+
+.project-overview a:hover {
+  color: var(--pink-secondary);
+}
+
 /* =====================
    RESUME
 ===================== */
@@ -282,5 +292,12 @@
 
   .resume-frame {
     height: 500px;
+  }
+
+  .skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 }
